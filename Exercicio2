@@ -1,0 +1,20 @@
+Exercício 2: Soma de Números Pares
+Escreva um programa que calcule a soma de todos os números pares entre 1 e 50 usando um laço
+`while`. Números pares são aqueles divisíveis por 2 sem resto.
+
+public class SomaPares {
+    public static void main(String[] args) {
+    	
+        int num = 1;
+        int soma = 0;
+
+        while (num <= 50) {
+            if (num % 2 == 0) { 
+                soma += num;
+            }
+            num++;
+        }
+
+        System.out.println("A soma dos números é igual a: " + soma + ".");
+    }
+}
