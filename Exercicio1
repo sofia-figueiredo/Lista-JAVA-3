@@ -1,0 +1,12 @@
+Exercício 1: Imprimir Números de 1 a 100
+Crie um programa que utilize um laço `for` para imprimir todos os números de 1 a 100. O laço deve
+iniciar em 1 e continuar até atingir 100.
+
+public class ImprimirIntervalo {
+    public static void main(String[] args) {
+    	
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+}
