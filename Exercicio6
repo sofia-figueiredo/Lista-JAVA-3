@@ -1,0 +1,24 @@
+Exercício 6: Contar Dígitos
+Escreva um programa que peça um número inteiro ao usuário e conte quantos dígitos esse número tem. Utilize um laço `while` para contar os dígitos, dividindo o número por 10 até que ele seja 0.
+import java.util.Scanner;
+
+public class ContarDigitos {
+    public static void main(String[] args) {
+        Scanner leitura = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro: ");
+        int numero = leitura.nextInt();
+        int contador = 0;
+
+        if (numero == 0) {
+            contador = 1;
+        } else {
+            while (numero != 0) {
+                numero /= 10;  
+                contador++;    
+            }
+        }
+
+        System.out.println("O número de dígitos é " + contador + ".");
+    }
+}
