@@ -1,0 +1,23 @@
+Exercício 3: Fatorial de um Número
+Desenvolva um programa que peça um número ao usuário e calcule o fatorial desse número
+usando um laço `for`. O fatorial de um número n é o produto de todos os inteiros positivos menores
+ou iguais a n (ex: 5! = 5 × 4 × 3 × 2 × 1 = 120).
+
+import java.util.Scanner;
+
+public class Fatorial {
+
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+		
+		System.out.println("Digite um número: ");
+		int resposta = leitura.nextInt();
+		int fatorial = 1;
+		
+		for (int numero = 1; numero <= resposta; numero++) {
+			fatorial *= numero;
+	        }
+
+	        System.out.println("O valor fatorial é " + fatorial + ".");
+	}
+}
