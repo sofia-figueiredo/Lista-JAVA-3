@@ -1,0 +1,22 @@
+Exercício 4: Tabuada
+Escreva um programa que solicite um número ao usuário e exiba sua tabuada de 1 a 10 usando um
+laço `for`. A tabuada de um número é a multiplicação desse número por todos os inteiros de 1 a 10.
+
+import java.util.Scanner;
+
+public class Tabuada {
+
+	public static void main(String[] args) {
+		Scanner leitura = new Scanner(System.in);
+
+		System.out.println("Digite um número: ");
+        int numeroEscolhido = leitura.nextInt();
+        
+        System.out.println("Tabuada do " + numeroEscolhido + ":");
+        
+        for (int numeroMultiplicado = 1; numeroMultiplicado <= 10; numeroMultiplicado ++) {
+        	int tabuadaDoNumero = (numeroMultiplicado * numeroEscolhido);
+        	System.out.println(numeroEscolhido + "x" + numeroMultiplicado + " = " + tabuadaDoNumero);
+        }
+	}
+}
